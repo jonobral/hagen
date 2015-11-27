@@ -23,5 +23,6 @@ This app will be used to keep a record of prices by category.
   <pre><code>git merge upstream/master</code></pre>
 
 ### Commit features/fixes to upstream
-* Open PR to upstream master
+* Open PR to upstream master by opening Pull Requests page:
+  https://github.com/username/hagen/pulls
 * Add a detailed comment
