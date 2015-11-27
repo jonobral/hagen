@@ -12,6 +12,9 @@ This app will be used to keep a record of prices by category.
   <pre><code>git remote add upstream git@github.com:jonobral/hagen.git</code></pre>
 * Check remotes for origin & upstream
   <pre><code>git remote -v</code></pre>
+* Results:
+  <pre><code>upstream	git@github.com:jonobral/hagen.git (fetch)</code></pre>
+  <pre><code>upstream	git@github.com:jonobral/hagen.git (push)</code></pre>
 
 ### Sync local development repo with upstream
 * Fetching latest commits
