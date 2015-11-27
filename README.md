@@ -23,6 +23,10 @@ This app will be used to keep a record of prices by category.
   <pre><code>git merge upstream/master</code></pre>
 
 ### Commit features/fixes to upstream
+* Add changes to local Stage (see https://www.atlassian.com/git/tutorials/saving-changes/git-add)
+  <pre><code>git add {file}</code></pre>
+* Commit changes ready to be pushed to cloned repo
+  <pre><code>git commit -m "<message>"</code></pre>
 * Open PR to upstream master by opening Pull Requests page:
   https://github.com/username/hagen/pulls
 * Add a detailed comment
