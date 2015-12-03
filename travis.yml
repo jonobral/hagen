@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - '0.12.7'
+  - 'iojs-v2.5.0'
+before_script:
+  - npm install -g gulp
+script: gulp test
+env:
+  global:
+    - NODE_ENV=test
