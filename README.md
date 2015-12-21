@@ -27,6 +27,8 @@ This app will be used to keep a record of prices by category.
   <pre><code>git add {file}</code></pre>
 * Commit changes ready to be pushed to cloned repo
   <pre><code>git commit -m "<message>"</code></pre>
+* Push local commits to master repo
+  <pre><code>git push origin master</code></pre>
 * Open PR to upstream master by opening Pull Requests page:
   https://github.com/username/hagen/pulls
 * Add a detailed comment
