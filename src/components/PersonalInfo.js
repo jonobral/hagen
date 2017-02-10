@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './PersonalInfo.css';
 
 class PersonalInfo extends Component {
-  
-  handleClick = () => {
-    let myVar = "jonathan";
-    console.log(myVar);
-  }
 
   render() {
     return (
@@ -17,7 +12,7 @@ class PersonalInfo extends Component {
         <button onClick={this.handleClick} />
         <div className="personal-info-section">
             <div className="personal-info-career">
-							{'Software developer'}
+              {'Software developer'}
             </div>
             <div className="personal-info-short-story">
 							{'Currently working at '}<a href="http://www.gorillalogic.com" target="_blank">{'Gorilla Logic'}</a>
