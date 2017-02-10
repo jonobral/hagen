@@ -15,10 +15,10 @@ class PersonalInfo extends Component {
               {'Software developer'}
             </div>
             <div className="personal-info-short-story">
-							{'Currently working at '}<a href="http://www.gorillalogic.com" target="_blank">{'Gorilla Logic'}</a>
+              {'Currently working at '}<a href="http://www.gorillalogic.com" target="_blank">{'Gorilla Logic'}</a>
             </div>
             <div className="personal-info-contact">
-							{'LinkedIn - Github - Email'}
+              {'LinkedIn - Github - Email'}
             </div>
         </div>
       </div>
