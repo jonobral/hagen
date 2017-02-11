@@ -15,23 +15,96 @@
   border-radius: 10px;
   height: 233px;
   width: 233px;
+  transition: all .5s ease;
   box-shadow:
     0 4px 3px rgba(0, 0, 0, 0.05),
     0 4px 5px rgba(0, 0, 0, 0.05),
     0 6px 10px rgba(0, 0, 0, 0.05);
 }
 
+.personal-info-photo:hover {
+  transform: scale(1.1);
+  border-color: black;
+  box-shadow: 0 0 1rem black;
+}
+
+.personal-info-career {
+  animation-delay:0.2s; 
+  -moz-animation-delay:0.2s; 
+  -webkit-animation-delay:0.2s;
+}
+
+.animated, .bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    -moz-animation-name: bounceInDown;
+    -o-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes bounceInDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-2000px);
+  }
+  60% {
+      opacity: 1;
+      transform: translateY(30px);
+  }
+  80% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
 .personal-info-short-story {
-	> a {
-    color: black;
-    text-decoration: none;
-	}
+  animation-delay:0.5s; 
+  -moz-animation-delay:0.5s; 
+  -webkit-animation-delay:0.5s;
+}
+
+.personal-info-short-story p {
+  margin: 5px;
+}
+
+.personal-info-short-story a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.personal-info-short-story a:hover {
+  color: blue;
+  text-decoration: none;
 }
 
 .personal-info-career {
 	font-size: 1.85em;
 }
 
-.personal-info-short-story {
+.personal-info-short-story, .personal-info-contact {
 	font-size: 1.75em;
+}
+
+.personal-info-contact p {
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5px;
+  transition: all .5s ease;
+}
+
+.personal-info-contact p:hover {
+  padding: 5px;
+  color: green;
 }

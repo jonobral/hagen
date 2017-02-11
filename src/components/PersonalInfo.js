@@ -9,16 +9,17 @@ class PersonalInfo extends Component {
         <div className="personal-info-section">
           <div className="personal-info-photo" />
         </div>
-        <button onClick={this.handleClick} />
         <div className="personal-info-section">
-            <div className="personal-info-career">
+            <div className="personal-info-career animated bounceInDown">
               {'Software developer'}
             </div>
-            <div className="personal-info-short-story">
-              {'Currently working at '}<a href="http://www.gorillalogic.com" target="_blank">{'Gorilla Logic'}</a>
+            <div className="personal-info-short-story animated bounceInDown">
+              <p>Currently working at <a href="http://www.gorillalogic.com" target="_blank">Gorilla Logic</a></p>
             </div>
             <div className="personal-info-contact">
-              {'LinkedIn - Github - Email'}
+              <p>LinkedIn</p>
+              <p>Github</p>
+              <p>jonobral@gmail.com</p>
             </div>
         </div>
       </div>
