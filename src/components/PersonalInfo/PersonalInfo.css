@@ -1,7 +1,6 @@
 .personal-info {
   display: flex;
   justify-content: center;
-  padding: 40px;
 }
 
 .personal-info-section {
@@ -11,7 +10,7 @@
 }
 
 .personal-info-photo {
-  background: url(../../public/photo.png);
+  background: url(../../assets/photo.png);
   border-radius: 10px;
   height: 233px;
   width: 233px;
@@ -105,6 +104,5 @@
 }
 
 .personal-info-contact p:hover {
-  padding: 5px;
-  color: green;
+  color: red;
 }

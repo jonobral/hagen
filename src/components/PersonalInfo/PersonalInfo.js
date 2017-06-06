@@ -10,16 +10,14 @@ class PersonalInfo extends Component {
           <div className="personal-info-photo" />
         </div>
         <div className="personal-info-section">
+            <div className="personal-info-career">
+              <span> Jonathan Obregón Alfaro </span>
+            </div>
             <div className="personal-info-career animated bounceInDown">
-              {'Software developer'}
+              <span>Software developer</span>
             </div>
             <div className="personal-info-short-story animated bounceInDown">
-              <p>Currently working at <a href="http://www.gorillalogic.com" target="_blank">Gorilla Logic</a></p>
-            </div>
-            <div className="personal-info-contact">
-              <p>LinkedIn</p>
-              <p>Github</p>
-              <p>jonobral@gmail.com</p>
+              <p>Currently working at <a href="http://www.gorillalogic.com" target="_blank" rel="noopener noreferrer">Gorilla Logic</a></p>
             </div>
         </div>
       </div>
