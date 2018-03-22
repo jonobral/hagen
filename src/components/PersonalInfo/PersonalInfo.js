@@ -7,17 +7,19 @@ class PersonalInfo extends Component {
     return (
       <div className="personal-info">
         <div className="personal-info-section">
-          <div className="personal-info-photo" />
+          <div className="personal-info-photo">
+            Hey there!
+          </div>
         </div>
         <div className="personal-info-section">
-            <div className="personal-info-career">
-              <span> Jonathan Obregón Alfaro </span>
+            <div className="personal-info-fullname">
+              <span>Jonathan Obregón Alfaro</span>
             </div>
             <div className="personal-info-career animated bounceInDown">
-              <span>Software developer</span>
+              <span>Software Developer</span>
             </div>
             <div className="personal-info-short-story animated bounceInDown">
-              <p>Currently working at <a href="http://www.gorillalogic.com" target="_blank" rel="noopener noreferrer">Gorilla Logic</a></p>
+              <span>Lives in Costa Rica</span>
             </div>
         </div>
       </div>

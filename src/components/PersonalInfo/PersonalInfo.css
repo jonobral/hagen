@@ -7,11 +7,24 @@
   display: flex;
   flex-direction: column;
   padding: 30px;
+  color: white;
+  text-shadow: 0 0 5px #000;
 }
 
 .personal-info-photo {
-  background: url(../../assets/photo.png);
-  border-radius: 10px;
+  background: url(./images/frontface.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  padding: 5px 10px;
   height: 233px;
   width: 233px;
   transition: all .5s ease;
@@ -88,21 +101,12 @@
   text-decoration: none;
 }
 
+.personal-info-fullname,
 .personal-info-career {
 	font-size: 1.85em;
 }
 
-.personal-info-short-story, .personal-info-contact {
-	font-size: 1.75em;
-}
-
-.personal-info-contact p {
-  cursor: pointer;
-  text-decoration: none;
-  margin: 5px;
-  transition: all .5s ease;
-}
-
-.personal-info-contact p:hover {
-  color: red;
+.personal-info-short-story {
+  font-size: 1.75em;
+  font-style: italic;
 }
