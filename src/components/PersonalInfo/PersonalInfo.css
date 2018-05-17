@@ -1,14 +1,28 @@
 .personal-info {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .personal-info-section {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding-bottom: 20px;
   color: white;
   text-shadow: 0 0 5px #000;
+}
+
+.personal-info-section.photo {
+  align-items: center;
+}
+
+@media (min-width: 500px) {
+  .personal-info {
+    flex-direction: row;
+  }
+  .personal-info-section {
+    padding: 30px;
+  }
 }
 
 .personal-info-photo {

@@ -6,7 +6,7 @@ class PersonalInfo extends Component {
   render() {
     return (
       <div className="personal-info">
-        <div className="personal-info-section">
+        <div className="personal-info-section photo">
           <div className="personal-info-photo">
             Hey there!
           </div>

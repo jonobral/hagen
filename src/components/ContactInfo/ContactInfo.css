@@ -1,7 +1,6 @@
 .contact-info {
   align-items: center;
   display: flex;
-  height: 50%;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -12,7 +11,35 @@
 
 .contact-info .contact-info-icon {
   cursor: pointer;
-  margin: 5px 100px;
+  margin: 5px 20px;
+}
+
+@media (min-width: 400px) {
+  .contact-info .contact-info-icon {
+    margin: 5px 40px;
+  }
+}
+
+@media (min-width: 500px) {
+  .contact-info .contact-info-icon {
+    margin: 5px 60px;
+  }
+}
+
+@media (min-width: 700px) {
+  .contact-info .contact-info-icon {
+    margin: 5px 80px;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact-info .contact-info-icon {
+    margin: 5px 100px;
+  }
+}
+
+.contact-info .contact-info-copiedtext {
+  margin: 10px;
 }
 
 .contact-info .contact-info-copiedtext > span {

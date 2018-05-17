@@ -21,6 +21,18 @@
   justify-content: center;
 }
 
+.section.app-personal {
+  height: 70vh;
+}
+
+.section.app-contact {
+  height: 30vh;
+}
+
+.section.app-projects {
+  height: 50vh;
+}
+
 .parallax::after {
   /* Display and position the pseudo-element */
   content: " ";
@@ -33,7 +45,7 @@
   /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(2.5);
+  transform: translateZ(-1px) scale(1);
   /* Force the background image to fill the whole element. */
   background-size: 100%;
   /* Keep the image from overlapping sibling elements. */ 
@@ -48,12 +60,12 @@
   background-image: url('./assets/bg1.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg2::after {
   background-image: url('./assets/bg2.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
+  background-size: cover;
 }
