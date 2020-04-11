@@ -15,7 +15,7 @@ const PopupCard = ({ title, url }) => (
     <div className="content">
       Click over the icon to copy {title} contact
       {url &&
-        <a href={url} target='_blank'> or let's go to {title} website</a>
+        <a href={url} target='_blank' rel="noopener noreferrer"> or let's go to {title} website</a>
       }
     </div>
   </div>
