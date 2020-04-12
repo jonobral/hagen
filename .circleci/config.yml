@@ -35,3 +35,5 @@ workflows:
           requires:
             - build-and-test
       - deploy-prod
+          requires:
+            - build-prod

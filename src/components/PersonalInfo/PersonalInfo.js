@@ -8,7 +8,7 @@ class PersonalInfo extends Component {
       <div className="personal-info">
         <div className="personal-info-section photo">
           <div className="personal-info-photo">
-            Hey there!
+            Hello!
           </div>
         </div>
         <div className="personal-info-section">
