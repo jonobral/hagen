@@ -34,6 +34,6 @@ workflows:
                 - master
           requires:
             - build-and-test
-      - deploy-prod
+      - deploy-prod:
           requires:
             - build-prod
