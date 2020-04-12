@@ -8,13 +8,13 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
-          steps:
-            - run: 
-                name: install-dependencies
-                command: npm install
-            - run: 
-                name: tests
-                command: npm test
+        steps:
+          - run: 
+              name: install-dependencies
+              command: npm install
+          - run: 
+              name: tests
+              command: npm test
   build-prod:
     docker:
       - image: circleci/node:10.15.2
