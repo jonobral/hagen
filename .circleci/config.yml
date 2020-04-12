@@ -15,12 +15,13 @@ jobs:
             - run: 
                 name: tests
                 command: npm test
-  deploy-prod:
+  build-prod:
     docker:
       - image: circleci/node:10.15.2
     steps:
       - checkout
       - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP ./build_project.sh
+  deploy-prod:
     steps:
       - checkout
       - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP ./deploy_project.sh
@@ -28,10 +29,11 @@ workflows:
   build-and-deploy:
     jobs:
       - build-and-test
-      - deploy-prod:
+      - build-prod:
           filters:
             branches:
               only:
                 - master
           requires:
             - build-and-test
+      - deploy-prod
