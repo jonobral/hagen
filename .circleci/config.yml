@@ -8,13 +8,9 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
-        steps:
-          - run: 
-              name: install-dependencies
-              command: npm install
-          - run: 
-              name: tests
-              command: npm test
+          steps:
+            - run: npm install
+            - run: npm test
   build-prod:
     docker:
       - image: circleci/node:10.15.2
@@ -22,6 +18,8 @@ jobs:
       - checkout
       - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP ./build_project.sh
   deploy-prod:
+    docker:
+      - image: circleci/node:10.15.2
     steps:
       - checkout
       - run: ssh -oStrictHostKeyChecking=no -v $DROPLET_USER@$DROPLET_IP ./deploy_project.sh
